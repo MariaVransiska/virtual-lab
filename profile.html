@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Profil pengguna: pilih gender dan nama.">
+  <meta name="theme-color" content="#0ea5a6" />
+  <title>Profil</title>
+  <link rel="icon" type="image/png" href="png/icon salib.png" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html"><img class="nav-icon" src="png/icon salib.png" alt="Home">Home</a>
+      <a href="materials.html">Materi</a>
+      <a href="videos.html">Video</a>
+      <a href="verses.html">Ayat Harian</a>
+      <a href="quiz.html">Quiz</a>
+      <a href="assignments.html">Tugas</a>
+      <a href="journal.html">Jurnal</a>
+      <a href="profile.html">Profil</a>
+    </nav>
+  </header>
+  <main class="container" role="main">
+    <h2>Profil</h2>
+    <div class="profile-header">
+      <img class="avatar" id="user-avatar" src="png/icon profile cowo.png" alt="Avatar" width="96" height="96">
+      <div id="saved-profile" class="profile-info"></div>
+    </div>
+    <form id="profile-form" autocomplete="on">
+      <label for="name">Nama</label>
+      <input id="name" type="text" placeholder="Nama lengkap" minlength="1" maxlength="50" required autocomplete="name" />
+      <label for="gender">Gender</label>
+      <select id="gender">
+        <option value="male">Laki-laki</option>
+        <option value="female">Perempuan</option>
+      </select>
+      <label for="nim">NIM</label>
+      <input id="nim" type="text" minlength="3" maxlength="25" autocomplete="on" />
+      <label for="kelas">Kelas</label>
+      <input id="kelas" type="text" maxlength="20" autocomplete="on" />
+      <br>
+      <button type="submit" id="save-profile">Save</button>
+    </form>
+  </main>
+  <footer>
+    <div class="container">
+      <p class="muted">© 2025 Virtual Lab Agama Kristen</p>
+    </div>
+  </footer>
+  <script src="script.js" defer></script>
+</body>
+</html>
